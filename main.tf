@@ -1,4 +1,4 @@
 resource "aws_internet_gateway" "khans_igw" {
-  vpc_id = aws_vpc.khans_vpc.id
+  vpc_id = var.vpc_id
   tags   = var.igw_tags
 }
